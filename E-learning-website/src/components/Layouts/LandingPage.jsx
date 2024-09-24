@@ -6,19 +6,19 @@ const LandingPage = () => {
 	return (
 		<div>
 			<LoginHeader />
-			<div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
-				<div class="absolute inset-0">
+			<div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+				<div className="absolute inset-0">
 					<img
 						src="../src/assets/coding-theme 1.png"
 						alt="Background Image"
-						class="object-cover object-center w-full h-full"
+						className="object-cover object-center w-full h-full"
 					/>
-					<div class="absolute inset-0"></div>
+					<div className="absolute inset-0"></div>
 				</div>
 
-				<div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
-					<h1 class="text-5xl font-bold leading-tight mb-4">Welcome to Videobelajar</h1>
-					<p class="text-lg text-gray-300 mb-8">
+				<div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
+					<h1 className="text-5xl font-bold leading-tight mb-4">Welcome to Videobelajar</h1>
+					<p className="text-lg text-gray-300 mb-8">
 						Videobelajar adalah platform pembelajaran video berbasis web yang memberikan pengguna
 						akses ke beragam kursus dan tutorial berbasis video. Dengan Videobelajar, pengguna dapat
 						belajar dengan kecepatan dan jadwal mereka sendiri. Videobelajar menawarkan cara yang

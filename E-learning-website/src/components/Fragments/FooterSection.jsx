@@ -11,25 +11,25 @@ const FooterSection = () => {
 					<div className="p-5">
 						<div className="text-sm uppercase text-indigo-600 font-bold">Resources</div>
 						<a className="my-3 block" href="/#">
-							Documentation <span class="text-teal-600 text-xs p-1"></span>
+							Documentation <span className="text-teal-600 text-xs p-1"></span>
 						</a>
 						<a className="my-3 block" href="/#">
-							Tutorials <span class="text-teal-600 text-xs p-1"></span>
+							Tutorials <span className="text-teal-600 text-xs p-1"></span>
 						</a>
 						<a className="my-3 block" href="/#">
-							Support <span class="text-teal-600 text-xs p-1">New</span>
+							Support <span className="text-teal-600 text-xs p-1">New</span>
 						</a>
 					</div>
 					<div className="p-5">
 						<div className="text-sm uppercase text-indigo-600 font-bold">Support</div>
 						<a className="my-3 block" href="/#">
-							Help Center <span class="text-teal-600 text-xs p-1"></span>
+							Help Center <span className="text-teal-600 text-xs p-1"></span>
 						</a>
 						<a className="my-3 block" href="/#">
-							Privacy Policy <span class="text-teal-600 text-xs p-1"></span>
+							Privacy Policy <span className="text-teal-600 text-xs p-1"></span>
 						</a>
 						<a className="my-3 block" href="/#">
-							Conditions <span class="text-teal-600 text-xs p-1"></span>
+							Conditions <span className="text-teal-600 text-xs p-1"></span>
 						</a>
 					</div>
 					<div className="p-5">
@@ -38,7 +38,7 @@ const FooterSection = () => {
 							BSD, Floor 4 Jakarta, Indonesia
 							<span className="text-teal-600 text-xs p-1"></span>
 						</a>
-						<a class="my-3 block" href="/#">
+						<a className="my-3 block" href="/#">
 							Videobelajar@company.com
 							<span className="text-teal-600 text-xs p-1"></span>
 						</a>
