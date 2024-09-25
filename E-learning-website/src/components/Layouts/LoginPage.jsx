@@ -4,10 +4,13 @@ import Buttom from "../Elements/buttom/index.jsx";
 import LineText from "../Elements/DLL/Line.jsx";
 import { Link } from "react-router-dom";
 
-const handleSubmit = () => {
-	console.log("submit");
-};
 const LoginPages = () => {
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		localStorage.setItem("email", e.target.email.value);
+		localStorage.setItem("password", e.target.password.value);
+		window.location.href = "/home";
+	};
 	return (
 		<div>
 			<Header />
@@ -16,21 +19,19 @@ const LoginPages = () => {
 				<p className="text-sm mb-8 text-center">Yuk, lanjutin belajarmu di videobelajar</p>
 				<form onSubmit={handleSubmit}>
 					<InputArea type="email" name="email" LabelName="E-Mail" />
-					<InputArea type="text" name="text" LabelName="Kata Sandi" />
-				</form>
-				<Link to="/lupapassword">
-					<p className="text-right italic">Lupa Password?</p>
-				</Link>
-				<Link to="/home">
+					<InputArea type="password" name="password" LabelName="Kata Sandi" />
+					<Link to="/lupapassword">
+						<p className="text-right italic">Lupa Password?</p>
+					</Link>
 					<Buttom type="submit">Masuk</Buttom>
-				</Link>
-				<Link to="/register">
-					<Buttom>Daftar</Buttom>
-				</Link>
-				<LineText LineText="atau" />
-				<Link to="https://accounts.google.com/">
-					<Buttom>Masuk dengan Google</Buttom>
-				</Link>
+					<Link to="/register">
+						<Buttom>Daftar</Buttom>
+					</Link>
+					<LineText LineText="atau" />
+					<Link to="https://accounts.google.com/">
+						<Buttom>Masuk dengan Google</Buttom>
+					</Link>
+				</form>
 			</div>
 		</div>
 	);

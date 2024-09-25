@@ -1,7 +1,5 @@
-import { Children } from "react";
-
 const Buttom = (props) => {
-	const { type, children, onClick = () => {} } = props;
+	const { type = "button", children, onClick = () => {} } = props;
 	return (
 		<button
 			type={type}
