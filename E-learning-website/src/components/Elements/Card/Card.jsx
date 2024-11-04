@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Buttom from "../buttom";
+
 const Card = (props) => {
 	const { children } = props;
 	return (
@@ -29,12 +32,19 @@ const CardImg = (props) => {
 const CardPrice = (props) => {
 	const { DiscountPrice, Price } = props;
 	return (
-		<div className=" px-4 py-3 w-72 flex items-center">
-			<p className="text-lg font-semibold text-black cursor-auto my-3">{DiscountPrice}</p>
-			<del>
-				<p className="text-sm text-gray-600 cursor-auto ml-2">{Price}</p>
-			</del>
-		</div>
+		<>
+			<div className=" px-4 pt-3 w-72 flex items-center">
+				<p className="text-lg font-semibold text-black cursor-auto my-3">{DiscountPrice}</p>
+				<del>
+					<p className="text-sm text-gray-600 cursor-auto ml-2">{Price}</p>
+				</del>
+			</div>
+			<div className="px-4 w-72  items-center">
+				<Link>
+					<Buttom>Beli</Buttom>
+				</Link>
+			</div>
+		</>
 	);
 };
 

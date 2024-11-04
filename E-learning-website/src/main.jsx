@@ -6,6 +6,7 @@ import Login from "./Pages/login.jsx";
 import Register from "./Pages/register.jsx";
 import ErrorPage from "./Pages/404.jsx";
 import Home from "./Pages/home.jsx";
+import Checkout from "./Pages/checkout.jsx";
 import RegisterNotivication from "./Pages/registerNotivication.jsx";
 import LupaPassword from "./Pages/lupapassword.jsx";
 import Landing from "./Pages/landing.jsx";
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
 	{
 		path: "/lupapassword",
 		element: <LupaPassword />,
+	},
+	{
+		path: "/checkout",
+		element: <Checkout />,
 	},
 ]);
 
